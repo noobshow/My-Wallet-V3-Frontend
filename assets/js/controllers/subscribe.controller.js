@@ -2,8 +2,9 @@ angular
   .module('walletApp')
   .controller('SubscribeCtrl', SubscribeCtrl);
 
-function SubscribeCtrl ($scope, MyWallet, country, buySell) {
+function SubscribeCtrl ($scope, MyWallet, country, buySell, $http) {
   $scope.countries = country;
+  $scope.data = {};
 
   $scope.fields = {
     email: MyWallet.wallet.accountInfo.email,

@@ -85,6 +85,14 @@ function NavigationCtrl ($scope, $window, $rootScope, $interval, $timeout, $cook
     }
   });
 
+  $scope.subscribe = () => {
+    $uibModal.open({
+      templateUrl: 'partials/subscribe-modal.jade',
+      windowClass: 'bc-modal initial',
+      controller: 'SubscribeCtrl'
+    });
+  };
+
   $scope.logout = () => {
     let isSynced = Wallet.isSynchronizedWithServer();
 
