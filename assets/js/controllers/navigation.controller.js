@@ -7,8 +7,9 @@ function NavigationCtrl ($scope, $window, $rootScope, $interval, $timeout, $cook
   $scope.settings = Wallet.settings;
 
   $scope.whatsNewTemplate = 'templates/whats-new.jade';
-
   $scope.lastViewedWhatsNew = null;
+
+  $rootScope.isSubscribed = $cookies.get('subscribed');
 
   $scope.getTheme = () => $scope.settings.theme;
 

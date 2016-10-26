@@ -773,6 +773,8 @@
   "BROWSER" : "Browser",
   "IP_ADDRESS" : "IP Address",
   "COUNTRY_OF_ORIGIN" : "Country Of Origin",
+  "COUNTRY": "Country",
+  "STATE": "State",
   "AUTHORIZE_REJECT_SUCCESS" : "Login attempt rejected! Please contact support if this was not you.",
   "CHECKING_LOGIN_ATTEMPT" : "Checking login attempt",
   "ERROR" : "Error",
